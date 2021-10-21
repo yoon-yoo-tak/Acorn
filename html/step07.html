@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid red;
+        }
+    </style>
+    <title>표(table) 형식으로 정보 출력하기</title>
+</head>
+<body>
+    <h1>표(table) 형식으로 정보 출력하기</h1>
+    <table summary="사회 생활을 하면서 가장 친한 친구 목록">
+        <caption>친구 목록</caption>
+        <colgroup>
+            <col width="200px">
+            <col width="500px">
+            <col width="300px">
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- th : 중앙정렬, 굵은글씨 -->
+            <th>번호</th>
+            <th>이름</th>
+            <th>국적</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>스티브</td>
+                <td rowspan="2">미국</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>게이츠</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>마이네임</td>
+                <td>캐나다</td>
+            </tr>
+            <tr>
+                <td colspan="2" >4</td>
+                <td>러시아</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
