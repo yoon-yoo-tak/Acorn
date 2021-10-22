@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid bisque;
+        }
+        .box:hover{/* 마우스가 지나갈 때 */
+            background-color: blueviolet;
+        }
+        input:focus{ /* 텍스트박스에 커서가  생겼을 때 */
+            background-color: yellow;
+        }
+        button:active{ /* 버튼이 클릭됐을때 */
+            background-color: red;
+        }
+        a{
+            text-decoration: none; /*밑줄 제거*/
+        }
+        a:hover{ /* 마우스를 올렸을 때 발생하는 pseudo class */
+            text-decoration: underline;
+            color: dodgerblue;
+        }
+        a:link{/* 한번도 방문하지 않았을 때 발생하는 pseudo class */
+            color: black;
+        }
+        a:visited{/* 한번이라도 방문했을 때 발생하는 pseudo class */
+            color: red;
+        }
+    </style>
+    <title>가상 클래스와 가상 요소</title>
+</head>
+<body>
+    <div class="box">box</div>
+    <input type="text">
+    <button>버튼</button>
+    <a href="https://daum.net">다음</a>
+    <p class="first">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <p class="second">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <p class="third">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+</body>
+</html>
