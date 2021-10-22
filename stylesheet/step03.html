@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <style>
+        /*
+        .container{
+            background-color: tomato;
+        }
+        */
+        /* .container의 자손중에서 p요소 선택 */
+        /*
+        .container p{
+            background-color: wheat;
+        }
+        */
+        /* .container의 자식중에서 p요소 선택 */
+        /*
+        .container > p{
+            background-color: wheat;
+        }
+        */
+        /* .container의 형제중에 바로 인접한 p요소 선택 */
+        .container + p{
+            background-color: wheat;
+        }
+        /* .container의 형제중에 모든 p요소 선택*/
+        .container ~ p {
+            background-color: wheat;
+        }
+        .container div{
+            background-color: wheat;
+        }
+
+    </style>
+    <title>CSS Selector</title>
+</head>
+<body>
+    <p>1Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <div class="container">
+        <p>2Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+        <div>
+            <p>3Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+        </div>
+        <p>4Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    </div>
+    <p class="classP">5Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <p>6Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+    <p>7Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+</body>
+</html>
