@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // camel case : 변수이름 선언시 두 단어 이상일 경우, 두번째 단어 첫 글자를 대문자로.
+        let myName = "Json";
+        let yourName = "Anna";
+        /*
+            + > 연결 연산자 
+            string + string > string
+            number + string > string
+        */
+        let plus = myName + yourName;
+        console.log(plus);
+
+        // es6 에서 추가된 템플릿 문자열
+        let city = "서울";
+        let here = "이곳은 " + city + " 이다.";
+        console.log(here);
+
+        let here2 = `이곳은 ${city} 이다.`
+        console.log(here2);
+
+        //   ==  > 값만 비교
+        //  ===  > 값과 자료형 비교
+        let a = 10;
+        let b = "10";
+        console.log(a==b);
+        console.log(a===b);
+    </script>
+    <title>string</title>
+</head>
+<body>
+    
+</body>
+</html>

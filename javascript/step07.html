@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let isRun = false;
+        let isWait = false;
+        let isBigger = 10 < 5;
+        let isSame = 10 == 100;
+        let isDiff = 10 != 100;
+        //모두 false
+
+        if(isRun){
+            console.log('달리는중');
+        }else{
+            console.log('달리지 않는 중');
+        }
+
+        // falsy value : 0, "", '', undefined, null, NaN
+        let a = 0;
+        let b = "";
+        let c;
+        let d = null;
+        let e = parseInt('abc');
+        
+        if(a){ // a~e까지 집어넣으면 결과는 모두 false
+            console.log(true);
+        }else{
+            console.log(false);
+        }
+    </script>
+    
+    <title>boolean</title>
+</head>
+<body>
+    
+</body>
+</html>
