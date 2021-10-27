@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let sum = 0;
+        let num = [2,3,4,5,6,7,0,8,9,2,3,4,5];
+        let inputValue = prompt("주민번호를 입력하세요 ", "111111-1111118");
+        if(inputValue != null){
+            for(let i = 0; i<6;i++){ // 앞자리 곱하기
+                sum += parseInt(inputValue[i])*num[i];
+            }
+            for(let i = 7; i<13;i++){ //뒷자리 곱하기
+                sum += parseInt(inputValue[i])*num[i];
+            }
+            
+            let last = (11-(sum%11))%10;  // 유효성검사
+
+            if(last == parseInt(inputValue[13])){
+                console.log("정상적인 주민번호 입니다.")
+            }else{
+                console.log("비 정상적인 주민번호 입니다.")
+            }
+        }else{
+            console.log('입력을 취소 하셨습니다.')
+        }
+    </script>
+    
+    <title>주민번호 체크</title>
+</head>
+<body>
+    
+</body>
+</html>
