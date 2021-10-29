@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('div').append('<h1>append</h1>'); //div p밑에
+            $('<h1>appendTo</h1>').appendTo('div'); // div p 밑에
+            $('div').prepend('<h1>prepend</h1>'); // div p 위에
+            $('<h1>prependTo</h1>').prependTo('div');
+            $('div').before('<h1>Before</h1>');
+            $('div').after('<h1>After</h1>');
+            //$('p').remove();
+            //$('p').detach(); // = remove
+            //$('p').empty(); // p태그를 날리는게 아니라 내용물을 비움
+           //let str = $('p').text(); // 컨텐츠만 가지고 옴.
+           //alert(str);
+           //let str2 = $('p').html(); //p태그의 정보 다 가지고옴.
+            //alert(str2);
+
+            //$('p').text('<strong>jquery</strong>'); // text안에 태그를 작성해도 적용안됨.
+            $('p').html('<strong>jquery</strong>');
+        });
+    </script>
+    <title>jquery dom mnipulation</title>
+</head>
+<body>
+    <div>
+        <p>
+            <strong>기준</strong>
+        </p>
+    </div>
+</body>
+</html>
